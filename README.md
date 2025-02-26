@@ -1,39 +1,42 @@
 # xunfei-tts
 
-This template should help get you started developing with Vue 3 in Vite.
+## 介绍
+`vue-xunfei-tts` 是一个适用于 **Vue 3** 的 **讯飞 TTS（语音合成）** 解决方案，基于 `Vite` 进行构建。
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+## 安装依赖
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
+## 启动开发环境
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
-
+## 生产环境构建
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
+## 代码格式检查
 ```sh
 npm run lint
 ```
+
+## 讯飞 TTS 使用方法
+1. 在 **`src/utils/onlineTTS.js`** 位置，配置 **讯飞 API 相关的三个 Key**。** 三个相关key需要登录讯飞官方平台获取 **
+2. 需要使用的三个 Key 说明：
+   - `APPID`：应用 ID
+   - `APIKey`：API 密钥
+   - `APISecret`：API 密钥（加密用）
+
+3. 示例代码：
+```js
+const APPID = 'xxx'
+const API_SECRET = 'xxx'
+const API_KEY = 'xxx'
+```
+
+## 参考文档
+- [讯飞官方文档](https://www.xfyun.cn/doc/)
+
